@@ -3,9 +3,9 @@
 1. Install dependencies  
     `composer install`
 
-2. Copy .env.example file and save as .env, configurate database connection and app URL
+2. Use .env.example file as template and save as .env file. Here configure database connection and app URL.
 
-3. Install Homestead
+3. Install Homestead  
     Mac/Linux:  
     `php vendor/bin/homestead make`  
 
@@ -25,10 +25,10 @@
 6. Generate JWTAuth secret key for token signing:  
     `php artisan jwt:secret`
 
-7. Create and run Homestead virtual machine
+7. Create and run Homestead virtual machine  
     `vagrant up`
 
-8. After virtual machine is running, run migrations
+8. After virtual machine is running, run migrations  
     `php artisan migrate`
 
 9. Now the Demo is ready for use, try:  
