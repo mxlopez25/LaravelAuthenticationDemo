@@ -1,49 +1,55 @@
-Laravel Authentication Demo (JWT)
+# Laravel Authentication Demo (JWT)
 
-Install dependencies
-    composer install
+1. Install dependencies  
+    `composer install`
 
-Copy .env.example file and save as .env, configurate database connection and app URL
+2. Copy .env.example file and save as .env, configurate database connection and app URL
 
-Install Homestead
-    Mac/Linux:
-    php vendor/bin/homestead make
+3. Install Homestead
+    Mac/Linux:  
+    `php vendor/bin/homestead make`  
 
-    Windows:
-    //vendor//bin//homestead make
+    Windows:  
+    `//vendor//bin//homestead make`  
 
-Create host address for project, edit hosts file (will need admin rights):
-    Mac/Linux:
-    nano /etc/hosts
+4. Create host address for project, edit hosts file (will need admin rights):  
+    Mac/Linux:  
+    `nano /etc/hosts`  
 
-    Windows
-    C:\Windows\System32\drivers\etc\hosts
+    Windows:  
+    `C:\Windows\System32\drivers\etc\hosts`  
 
-Generate application key
-    php artisan key:generate
+5. Generate application key  
+    `php artisan key:generate`
 
-Generate JWTAuth secret key for token signing:
-    php artisan jwt:secret
+6. Generate JWTAuth secret key for token signing:  
+    `php artisan jwt:secret`
 
-Create and run Homestead virtual machine
-    vagrant up
+7. Create and run Homestead virtual machine
+    `vagrant up`
 
-After virtual machine is running, run migrations
-    php artisan migrate
+8. After virtual machine is running, run migrations
+    `php artisan migrate`
 
-Now the Demo is ready for use:
-    To register users:
-        URL: <Host>/api/register
-        Data: {
-            "name" : "User One",
-            "email: : user@test.com",
-            "password" : "123456",
-            "password_confirmed" : "123456"
-        }
+9. Now the Demo is ready for use, try:  
+        To register a user:
 
-    To login user:
-        URL: <Host>/api/login
-        Data: {
+        URL:
+            <Host>/api/register  
+        Data:  
+        {  
+            "name" : "User One",  
+            "email: : user@test.com",  
+            "password" : "123456",  
+            "password_confirmed" : "123456"  
+        }  
+
+    To login user:  
+        
+        URL:
+            <Host>/api/login  
+        Data:        
+        {  
             "email: : user@test.com",
             "password" : "123456"
         }
